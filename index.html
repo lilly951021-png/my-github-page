@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>我的學習歷程與成果展示 | GitHub Page</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- 引入 jQuery CDN -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+
+  <!-- 頂部導覽列 -->
+  <header>
+    <div class="nav-container">
+      <h1 class="logo">學習成果展示</h1>
+      <nav>
+        <button id="toggle-theme-btn">切換淺色/深色主題</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- 個人與 GitHub 帳號簡介區塊 -->
+    <section class="card profile-section">
+      <h2>GitHub 個人帳號</h2>
+      <p>歡迎來到我的個人展示頁面！下方是我的 GitHub 個人帳號資訊：</p>
+      <div class="img-wrapper">
+        <img src="images/github-profile.png" alt="GitHub 帳號截圖" class="preview-img">
+        <p class="img-caption">點擊圖片可放大查看 (GitHub 帳號主頁截圖)</p>
+      </div>
+    </section>
+
+    <!-- 學習成果展示區塊 -->
+    <section class="card cert-section">
+      <h2>學習認證與完成成果</h2>
+      <p>點擊下方任一卡片可使用 jQuery 查看大圖：</p>
+      
+      <div class="grid-container">
+        <!-- Git -->
+        <div class="grid-item">
+          <h3>Git 學習證明</h3>
+          <img src="images/git-cert.png" alt="Git 完成截圖" class="preview-img">
+        </div>
+
+        <!-- HTML5 -->
+        <div class="grid-item">
+          <h3>HTML5 學習證明</h3>
+          <img src="images/html5-cert.png" alt="HTML5 完成截圖" class="preview-img">
+        </div>
+
+        <!-- CSS -->
+        <div class="grid-item">
+          <h3>CSS 學習證明</h3>
+          <img src="images/css-cert.png" alt="CSS 完成截圖" class="preview-img">
+        </div>
+
+        <!-- Ajax -->
+        <div class="grid-item">
+          <h3>Ajax 學習證明</h3>
+          <img src="images/ajax-cert.png" alt="Ajax 完成截圖" class="preview-img">
+        </div>
+
+        <!-- jQuery -->
+        <div class="grid-item">
+          <h3>jQuery 學習證明</h3>
+          <img src="images/jquery-cert.png" alt="jQuery 完成截圖" class="preview-img">
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- jQuery 燈箱放大彈窗 (Modal) -->
+  <div id="image-modal" class="modal">
+    <span class="close-btn">&times;</span>
+    <img class="modal-content" id="modal-img" alt="放大圖片">
+    <div id="modal-caption"></div>
+  </div>
+
+  <footer>
+    <p>© 2026 個人學習歷程頁面 | Powered by GitHub Pages & jQuery</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
